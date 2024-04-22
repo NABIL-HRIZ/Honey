@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Honey/static/css/main.d621aad7.css",
+    "main.js": "/Honey/static/js/main.22fc3f25.js",
+    "static/js/453.f7be5b23.chunk.js": "/Honey/static/js/453.f7be5b23.chunk.js",
+    "static/media/OurRawHoney.mp4": "/Honey/static/media/OurRawHoney.160e2d9a7da8e7c45276.mp4",
+    "static/media/honey_2.jpg": "/Honey/static/media/honey_2.709e056e292ea0efdb9c.jpg",
+    "static/media/honey_3.jpg": "/Honey/static/media/honey_3.73a5249fbc9abd2267ed.jpg",
+    "static/media/honey_1.jpg": "/Honey/static/media/honey_1.43ae9967cfd3fc36b4df.jpg",
+    "static/media/honey_4.jpg": "/Honey/static/media/honey_4.9a49ae83405a6e1427bc.jpg",
+    "static/media/personne3.jpg": "/Honey/static/media/personne3.2a7b898a6421f7588fd9.jpg",
+    "static/media/personne_4.jpg": "/Honey/static/media/personne_4.ebf188a5a9c89bccd49d.jpg",
+    "static/media/personne_2.jpg": "/Honey/static/media/personne_2.fa2ab4c2acf520e2eb38.jpg",
+    "static/media/honey_footer.jpg": "/Honey/static/media/honey_footer.ad1c2e151ce0e0eab972.jpg",
+    "static/media/personne_5.jpg": "/Honey/static/media/personne_5.d3e6a09fa74ec03db012.jpg",
+    "static/media/honey_home.png": "/Honey/static/media/honey_home.50898d1b6693a99b981d.png",
+    "static/media/honey_logo.png": "/Honey/static/media/honey_logo.8048e46a90005a6b00b8.png",
+    "index.html": "/Honey/index.html",
+    "main.d621aad7.css.map": "/Honey/static/css/main.d621aad7.css.map",
+    "main.22fc3f25.js.map": "/Honey/static/js/main.22fc3f25.js.map",
+    "453.f7be5b23.chunk.js.map": "/Honey/static/js/453.f7be5b23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d621aad7.css",
+    "static/js/main.22fc3f25.js"
+  ]
+}

@@ -1,0 +1,99 @@
+.plans_header h1 {
+    margin-top: 30px;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.plans_item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    height: 70vh;
+    color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.plans_item:nth-of-type(1),
+.plans_item:nth-of-type(3) {
+    transform: scale(1.1);
+    box-shadow: 8px 10px 10px var(--yellow);
+}
+
+.plans_item>span:nth-of-type(1) {
+    font-size: 50px;
+    color: var(--yellow);
+}
+
+.plans_item>span:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.plans_item>span:nth-of-type(3) {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.plans_detail>div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.plans_detail>div>span:nth-of-type(1) {
+    font-size: 20px;
+    color: rgb(215, 214, 214);
+}
+
+.plans_detail>div>span:nth-of-type(2) {
+    color: rgb(215, 214, 214);
+}
+
+@media only screen and (max-width: 768px) {
+    .plans {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .plans_header>h1 {
+        font-size: 30px;
+    }
+
+    .plans_item {
+        height: auto;
+        /* Remove fixed height for mobile */
+        margin-left: 0;
+        /* Remove left margin for mobile */
+    }
+
+    .plans_item:nth-of-type(1),
+    .plans_item:nth-of-type(3) {
+        transform: none;
+        /* Remove transform for mobile */
+        box-shadow: none;
+        /* Remove box shadow for mobile */
+    }
+
+    .plans_item>span:nth-of-type(1) {
+        font-size: 30px;
+        /* Decrease font size for mobile */
+    }
+
+    .plans_item>span:nth-of-type(3) {
+        font-size: 20px;
+        /* Decrease font size for mobile */
+    }
+}

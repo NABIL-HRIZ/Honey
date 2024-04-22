@@ -1,0 +1,122 @@
+.AboutUs {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.AboutUs .left_about {
+    flex: 1 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: 1fr;
+
+}
+
+.AboutUs .left_about>img {
+    object-fit: cover;
+}
+
+.AboutUs .left_about>:nth-of-type(1) {
+    width: 200px;
+    grid-row: 1/3;
+    height: 350px;
+}
+
+.AboutUs .left_about>:nth-of-type(2) {
+    width: 400px;
+    height: 200px;
+    grid-column: 2/4;
+}
+
+.AboutUs .left_about>:nth-of-type(3) {
+    width: 200px;
+    height: 200px;
+    grid-column: 2/3;
+}
+
+.AboutUs .left_about>:nth-of-type(4) {
+    width: 200px;
+    height: 200px;
+    grid-column: 3/4;
+}
+
+.AboutUs .right_about {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(69, 69, 69);
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+.AboutUs .right_about>span:nth-of-type(1) {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.AboutUs .right_about>span:nth-of-type(2) {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.AboutUs .right_about>p {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+    .AboutUs {
+        flex-direction: column;
+        /* Stack items vertically on mobile */
+        align-items: center;
+        /* Center items horizontally on mobile */
+        padding: 10px;
+        /* Reduce padding for mobile */
+    }
+
+    .AboutUs .left_about {
+        display: flex;
+        /* Change display to flex for mobile */
+        flex-wrap: wrap;
+        /* Wrap items for mobile */
+        justify-content: center;
+        /* Center items horizontally on mobile */
+    }
+
+    .AboutUs .left_about> :nth-of-type(1) {
+        width: 100%;
+        /* Set width to 100% for full width on mobile */
+        height: 300px;
+        /* Set height to auto for aspect ratio on mobile */
+        margin-bottom: 10px;
+        /* Add spacing between items on mobile */
+        grid-row: auto;
+        /* Remove grid positioning on mobile */
+        grid-column: auto;
+        /* Remove grid positioning on mobile */
+    }
+
+    .AboutUs .left_about> :nth-of-type(n+2) {
+        width: calc(50% - 5px);
+        /* Set width to 50% minus gap for two-column layout on mobile */
+        height: auto;
+        /* Set height to auto for aspect ratio on mobile */
+        margin-right: 10px;
+        /* Add spacing between items on mobile */
+    }
+
+    .AboutUs .right_about {
+        margin-top: 20px;
+        /* Add spacing between sections on mobile */
+        border-top-right-radius: 0;
+        /* Remove border radius on mobile */
+    }
+}

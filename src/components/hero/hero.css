@@ -1,0 +1,156 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(162, 161, 161);
+    padding-left: 10px;
+}
+
+.left {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 3;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.left_para {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.left_para>:nth-child(3) {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+    text-transform: lowercase;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.figures {
+    display: flex;
+    align-items: center;
+    gap: 4rem
+}
+
+.figures>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.figures>div>span:nth-of-type(1) {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.figures>div>span:nth-of-type(2) {
+    color: rgb(50, 50, 50);
+    font-size: 18px;
+}
+
+.left_btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 3px solid var(--yellow);
+    padding: 8px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    transition: .5s ease-in-out;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btn:nth-of-type(1) {
+    background-color: var(--yellow);
+}
+
+.btn:hover {
+    background-color: var(--yellow);
+    border: none;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.right {
+    flex: 1;
+    position: relative;
+    background-color: var(--yellow);
+}
+
+.right .logo {
+    position: absolute;
+    right: 3rem;
+    top: -2rem;
+}
+
+.hero_img {
+    position: absolute;
+    top: 2rem;
+    right: -1rem;
+    width: 25rem;
+    height: 650px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding-left: 5px;
+    }
+
+    .left_para {
+        font-size: 40px;
+        margin-left: 60px;
+    }
+
+    .left_para> :nth-child(3) {
+        font-size: 14px;
+    }
+
+    .figures {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .figures>div {
+        margin-bottom: 10px;
+    }
+
+    .left_btns {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    .right .logo {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .hero_img {
+        position: static;
+        width: 80%;
+        height: 80%;
+    }
+}

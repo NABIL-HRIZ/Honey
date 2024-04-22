@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.header h1 {
+    color: rgb(225, 225, 11);
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 10px;
+}
+
+.header_menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+}
+
+.header_menu>li {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header_menu>li>a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header_menu>li>a:hover {
+    color: orange;
+    transition: .4s ease-in-out;
+}
+
+.header_menu>li:hover {
+    color: rgb(225, 225, 11);
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+        margin-right: 0;
+        /* Remove right margin */
+    }
+
+    .header h1 {
+        font-size: 30px;
+        /* Decrease font size */
+        letter-spacing: 5px;
+        /* Decrease letter spacing */
+        margin-bottom: 20px;
+        /* Add some space below the heading */
+    }
+
+    .header_menu {
+        flex-direction: column;
+        /* Stack menu items vertically */
+        gap: 0.5rem;
+        /* Reduce gap between menu items */
+    }
+
+    .header_menu>li {
+        font-size: 16px;
+        /* Decrease font size */
+        margin-bottom: 10px;
+        /* Add some space below each menu item */
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Show toggle button */
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        /* Add some space below the toggle button */
+    }
+
+    .menu-toggle:hover {
+        color: rgb(225, 225, 11);
+    }
+
+    .menu-active .header_menu {
+        display: flex;
+        /* Show menu when toggle button is active */
+    }
+
+    .menu-active .menu-toggle::after {
+        content: 'Close';
+        /* Change toggle button text to "Close" when active */
+    }
+}

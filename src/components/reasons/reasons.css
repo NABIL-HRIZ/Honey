@@ -1,0 +1,130 @@
+.reasons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reasons_header h1 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.reason_header {
+    margin-top: 10px;
+    margin-left: 30%;
+    background-color: rgb(86, 85, 85);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 18px 13px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.reason_header>span {
+    z-index: 2;
+
+}
+
+.reason_header>div {
+    position: absolute;
+    background-color: rgb(199, 199, 17);
+    width: 100px;
+    height: 80%;
+    left: 8px;
+    top: 2%;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.reasons_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.reasons_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.reasons_img>span {
+    font-size: 80px;
+    color: var(--yellow);
+}
+
+.reasons-desc_para {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reasons-desc_para>span:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.reasons-desc_para>span:nth-of-type(2) {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    .reason_header {
+        margin-left: 10%;
+        width: auto;
+        padding: 12px 10px;
+        letter-spacing: 4px;
+    }
+
+    .reason_header>div {
+        width: 50px;
+        height: 60%;
+        left: 4px;
+        top: 5%;
+    }
+
+    .reasons_items {
+        grid-template-columns: 1fr;
+        /* Change to one-column layout for mobile */
+    }
+
+    .reasons_description {
+        flex-direction: column;
+        /* Stack items vertically for mobile */
+        align-items: flex-start;
+        /* Align items to the start for mobile */
+        gap: 10px;
+    }
+
+    .reasons_img>span {
+        font-size: 60px;
+        /* Decrease font size for mobile */
+    }
+
+    .reasons-desc_para>span:nth-of-type(1) {
+        font-size: 15px;
+        /* Decrease font size for mobile */
+        font-weight: 600;
+    }
+
+    .reasons-desc_para>span:nth-of-type(2) {
+        font-size: 15px;
+        /* Decrease font size for mobile */
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    .reasons_header h1 {
+        font-size: 30px;
+    }
+}

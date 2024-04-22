@@ -1,0 +1,129 @@
+.testimonials {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #000;
+}
+
+.testimonials .left-say {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1;
+}
+
+.testimonials .left-say>span:nth-of-type(1) {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.testimonials .left-say>span:nth-of-type(2) {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 2px;
+
+}
+
+.testimonials .left-say>span:nth-of-type(3) {
+    font-size: 15px;
+    color: #eeeaea;
+    letter-spacing: 1px;
+}
+
+.testimonials .left-say>span:nth-of-type(4) {
+    font-size: 20px;
+    color: var(--yellow);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonials .right-say {
+    flex: 1;
+    position: relative;
+}
+
+.testimonials .right-say>img {
+    position: absolute;
+    right: 8rem;
+    border-radius: 20px;
+    border: 4px solid var(--yellow);
+}
+
+.testimonials .right-say>div {
+    position: absolute;
+    top: 4rem;
+}
+
+.testimonials .right-say>div>span {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 10px;
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .testimonials {
+        flex-direction: column;
+        /* Stack items vertically for mobile */
+        padding: 10px;
+        /* Adjust padding for mobile */
+    }
+
+    .testimonials .left-say {
+        margin-bottom: 20px;
+        /* Add margin bottom for mobile */
+    }
+
+    .testimonials .left-say>span:nth-of-type(1) {
+        font-size: 40px;
+        /* Decrease font size for mobile */
+    }
+
+    .testimonials .left-say>span:nth-of-type(2) {
+        font-size: 25px;
+        /* Decrease font size for mobile */
+    }
+
+    .testimonials .left-say>span:nth-of-type(3) {
+        font-size: 14px;
+        /* Decrease font size for mobile */
+    }
+
+    .testimonials .left-say>span:nth-of-type(4) {
+        font-size: 18px;
+        /* Decrease font size for mobile */
+        margin-left: 0;
+        /* Remove left margin for mobile */
+        text-align: center;
+        /* Align text to center for mobile */
+    }
+
+    .testimonials .right-say>img {
+        margin-top: -20px !important;
+        right: 2rem;
+        /* Adjust position for mobile */
+    }
+
+    .testimonials .right-say>div>span {
+        position: relative;
+        top: 140px;
+        left: 180px;
+        font-size: 30px;
+        padding-top: -30px;
+        /* Decrease font size for mobile */
+    }
+
+    .testimonials .left-say {
+        align-items: center;
+        /* Center items vertically for mobile */
+        text-align: center;
+        /* Align text to center for mobile */
+    }
+}

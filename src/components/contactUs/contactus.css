@@ -1,0 +1,123 @@
+.contactUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    background-color: rgb(235, 231, 231);
+}
+
+.contactUs .left_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactUs .left_contact>span {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.stroke-text-change {
+    -webkit-text-stroke-color: black;
+}
+
+.contactUs .right_contact {
+    margin-right: 50px;
+}
+
+.contactUs .right_contact .send {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(189, 186, 186);
+    padding: 30px;
+}
+
+.contactUs .right_contact .send>input {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.contactUs .right_contact .send>input::placeholder,
+.contactUs .right_contact .send>textarea::placeholder {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.contactUs .right_contact .send>textarea {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.contactUs .right_contact .send>button {
+    background-color: var(--yellow);
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactUs {
+        flex-direction: column;
+        /* Stack items vertically for mobile */
+        padding: 20px;
+        /* Adjust padding for mobile */
+        gap: 20px;
+        /* Increase gap for mobile */
+        margin-top: 300px;
+    }
+
+    .left_contact>span {
+        font-size: 30px !important;
+    }
+
+    .contactUs .right_contact {
+        margin-right: 0;
+        /* Remove right margin for mobile */
+    }
+
+
+    .contactUs .right_contact .send {
+        padding: 20px;
+        /* Adjust padding for mobile */
+    }
+
+    .contactUs .left_contact>span {
+        font-size: 40px;
+        /* Decrease font size for mobile */
+        text-align: center;
+        /* Align text to center for mobile */
+    }
+
+    .contactUs .right_contact .send>input,
+    .contactUs .right_contact .send>textarea {
+        width: 80%;
+        /* Make input and textarea full width for mobile */
+    }
+
+    .contactUs .right_contact .send>button {
+        margin-left: 20px;
+        /* Align button to right for mobile */
+        margin-right: auto;
+        /* Align button to left for mobile */
+    }
+
+}
